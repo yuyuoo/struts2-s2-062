@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 默认是开启的 -->
+    <constant name="struts.tag.altSyntax" value="true"/>
+    <package name="default" extends="struts-default" namespace="/">
+        <!-- IndexAction 类-->
+        <action name="index" class="com.test.demo.IndexAction" method="execute">
+            <result name="success">index.jsp</result>
+        </action>
+        <!-- testAction 类-->
+        <action name="test" class="com.test.demo.testAction" method="execute">
+            <result name="success">test.jsp</result>
+        </action>
+    </package>
+</struts>
